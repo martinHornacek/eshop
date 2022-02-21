@@ -1,0 +1,12 @@
+﻿@model eshop.Infrastructure.Models.QuoteDetailsDto
+
+@using (Html.BeginForm())
+{
+    @Html.Hidden("Id", Model.Id)
+    @Html.Hidden("Version", Model.Version)
+    @Html.Label("Activate: ")
+    <button name="submit">Submit</button>
+}
+
+
+

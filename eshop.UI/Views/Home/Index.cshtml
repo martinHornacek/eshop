@@ -1,0 +1,11 @@
+﻿@model IEnumerable<eshop.Infrastructure.Models.QuoteDto>
+<h2>All items:</h2>
+<ul>
+    @foreach (var quoteDto in Model)
+    {
+        <li>
+            @Html.ActionLink("Name: " + quoteDto.Name, "Details", new { Id = quoteDto.Id })
+        </li>
+    }
+</ul>
+@Html.ActionLink("Create Quote", "CreateQuote")

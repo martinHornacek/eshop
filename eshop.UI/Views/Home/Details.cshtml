@@ -1,0 +1,18 @@
+﻿@model eshop.Infrastructure.Models.QuoteDetailsDto
+<h2>Details:</h2>
+Id: @Model.Id
+<br />
+Name: @Model.Name
+<br />
+Count: @Model.CurrentCount
+<br />
+<br />
+@Html.ActionLink("Rename Quote", "RenameQuote", new { Id = Model.Id })
+<br />
+@Html.ActionLink("Activate Quote", "ActivateQuote", new { Id = Model.Id, Version = Model.Version })
+<br />
+@Html.ActionLink("Add Quote Products To Quote", "AddQuoteProductsToQuote", new { Id = Model.Id })
+<br />
+@Html.ActionLink("Remove Quote Products From Quote", "RemoveQuoteProductsFromQuote", new { Id = Model.Id, Version = Model.Version })
+
+

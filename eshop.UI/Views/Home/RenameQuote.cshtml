@@ -1,0 +1,11 @@
+﻿@model eshop.Infrastructure.Models.QuoteDetailsDto
+@using (Html.BeginForm())
+{
+    @Html.Hidden("Id", Model.Id)
+    @Html.Hidden("Version", Model.Version)
+    @Html.Label("New Name:") @Html.TextBox("Name");
+    <br />
+    <button name="submit">Submit</button>
+}
+
+
